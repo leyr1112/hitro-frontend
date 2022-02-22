@@ -47,7 +47,7 @@ const useGetTopFarmsByApr = (isIntersecting: boolean) => {
       const farmsWithPrices = farmsState.filter((farm) => farm.lpTotalInQuoteToken && farm.quoteToken.busdPrice)
       const farmsWithApr: FarmWithStakedValue[] = farmsWithPrices.map((farm) => {
         const _totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteToken.busdPrice)
-        const totalLiquidity = _totalLiquidity.plus(17000)
+        const totalLiquidity = _totalLiquidity.plus(0)
         const { cakeRewardsApr, lpRewardsApr } = getFarmApr(
           new BigNumber(farm.poolWeight),
           cakePriceBusd,

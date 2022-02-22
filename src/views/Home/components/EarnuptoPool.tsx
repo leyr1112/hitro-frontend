@@ -38,7 +38,7 @@ const EarnuptoPool = () => {
       farmsToDisplay.map((farm) => {
         if(farm.isTokenOnly){
           const _totalLiquidity = farm.isTokenOnly ? new BigNumber(farm.lpTotalInQuoteToken).times(farm.token.busdPrice) : new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteToken.busdPrice)
-          const totalLiquidity = _totalLiquidity.plus(17000)
+          const totalLiquidity = _totalLiquidity.plus(0)
           const { cakeRewardsApr } = getFarmApr(new BigNumber(farm.poolWeight), cakePrice, totalLiquidity, farm.lpAddresses[ChainId.MAINNET], new BigNumber(farm.HtoPerBlock))
           apy = cakeRewardsApr
         if (maxAPY.current < apy) maxAPY.current = apy

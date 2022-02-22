@@ -100,7 +100,7 @@ export const usePriceBnbBusd = (): BigNumber => {
 }
 
 export const usePriceCakeBusd = (): BigNumber => {
-  const cakeBnbFarm = useFarmFromPid(0)
+  const cakeBnbFarm = useFarmFromPid(1)
 
   const cakePriceBusdAsString = cakeBnbFarm.token.busdPrice
 
@@ -123,7 +123,7 @@ export const useTotalValue = (): BigNumber => {
       } else {
         val = (new BigNumber(farm.lpTotalInQuoteToken)).times(farm.token.busdPrice);
       }
-      value = value.plus(val).plus(17000);
+      value = value.plus(val).plus(0);
     }
   }
   return value;

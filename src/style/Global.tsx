@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: rgb(98, 94, 92);
     background-blend-mode: overlay;
     background-attachment: fixed;
+    // background-image: url(images/background.png);
     background-image: url(images/background.gif);
     background-repeat: no-repeat;
     background-size: cover;

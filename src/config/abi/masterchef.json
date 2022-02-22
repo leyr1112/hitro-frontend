@@ -791,7 +791,7 @@
                 "type": "uint256"
             }
         ],
-        "name": "witmdraw",
+        "name": "withdraw",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"

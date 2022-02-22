@@ -164,7 +164,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           return farm
         }
         const _totalLiquidity = farm.isTokenOnly ? new BigNumber(farm.lpTotalInQuoteToken).times(farm.token.busdPrice) : new BigNumber(farm.lpTotalInQuoteToken).times(farm.quoteToken.busdPrice)
-        const totalLiquidity = _totalLiquidity.plus(17000)
+        const totalLiquidity = _totalLiquidity.plus(0)
         const { cakeRewardsApr, lpRewardsApr } = isActive
           ? getFarmApr(new BigNumber(farm.poolWeight), cakePrice, totalLiquidity, farm.lpAddresses[ChainId.MAINNET], new BigNumber(farm.HtoPerBlock))
           : { cakeRewardsApr: 0, lpRewardsApr: 0 }
@@ -298,7 +298,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         isTokenOnly: farm.isTokenOnly
       },
       earned: {
-        earnings: getBalanceNumber(new BigNumber(farm.userData.earnings), 18),
+        earnings: getBalanceNumber(new BigNumber(farm.userData.earnings), 9),
         pid: farm.pid,
       },
       liquidity: {
@@ -402,7 +402,7 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       <Page>
         <ControlContainer>
           <ViewControls>
-            <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
+            {/* <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} /> */}
             <ToggleWrapper>
               <Toggle checked={stakedOnly} onChange={() => setStakedOnly(!stakedOnly)} scale="sm" />
               <Text> {t('Staked only')}</Text>

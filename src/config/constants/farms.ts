@@ -118,7 +118,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
+      56: '0x58F876857a02D6762E0101bb5C46A8c1ED44Dc16',
     },
     token: tokens.wbnb,
     quoteToken: tokens.busd,
@@ -140,7 +140,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c',
+      56: '0xF45cd219aEF8618A92BAa7aD848364a158a24F33',
     },
     token: tokens.btcb,
     quoteToken: tokens.busd,
@@ -151,7 +151,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
+      56: '0x7213a321F1855CF1779f42c0CD85d3D95291D34C',
     },
     token: tokens.eth,
     quoteToken: tokens.busd,
@@ -162,7 +162,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3',
+      56: '0x66FDB2eCCfB58cF098eaa419e5EfDe841368e489',
     },
     token: tokens.dai,
     quoteToken: tokens.busd,
@@ -173,7 +173,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x55d398326f99059fF775485246999027B3197955',
+      56: '0x7EFaEf62fDdCCa950418312c6C91Aef321375A00',
     },
     token: tokens.usdt,
     quoteToken: tokens.busd,
@@ -184,7 +184,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
+      56: '0x2354ef4DF11afacb85a5C7f98B624072ECcddbB1',
     },
     token: tokens.usdc,
     quoteToken: tokens.busd,
@@ -195,7 +195,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+      56: '0x804678fa97d91B974ec2af3c843270886528a9E6',
     },
     token: tokens.cake,
     quoteToken: tokens.busd,
@@ -217,7 +217,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x2859e4544c4bb03966803b044a93563bd2d0dd4d',
+      56: '0xc97B349ab68361E6b6E911D0Cf6D3f74187c6B72',
     },
     token: tokens.shiba,
     quoteToken: tokens.busd,
@@ -228,7 +228,7 @@ const farms: FarmConfig[] = [
     isTokenOnly: true,
     lpAddresses: {
       97: '',
-      56: '0x3ee2200efb3400fabb9aacf31297cbdd1d435d47',
+      56: '0x1E249DF2F58cBef7EAc2b0EE35964ED8311D5623',
     },
     token: tokens.ada,
     quoteToken: tokens.busd,
