@@ -51,7 +51,7 @@ const FarmedStakingCard = () => {
   const { account } = useWeb3React()
   const {t} = useTranslation()
   const metaBalance = useTokenBalance(getCakeAddress())
-  const metaUserBalance = metaBalance.balance ? getBalanceNumber(metaBalance.balance, 18) : 0
+  const metaUserBalance = metaBalance.balance ? getBalanceNumber(metaBalance.balance, 9) : 0
   const metaPrice = usePriceCakeBusd().toNumber()
 
   const registerToken = async (tokenAddress: string, tokenSymbol: string, tokenDecimals: number) => {

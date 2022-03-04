@@ -32,7 +32,7 @@ export interface Farm extends FarmConfig {
   tokenPriceVsQuote?: SerializedBigNumber
   depositFee?:SerializedBigNumber
   poolWeight?: SerializedBigNumber
-  HtoPerBlock?: SerializedBigNumber
+  HtoPerBlock?: BigNumber
   userData?: {
     allowance: string
     tokenBalance: string

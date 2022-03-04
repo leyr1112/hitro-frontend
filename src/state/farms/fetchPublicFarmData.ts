@@ -17,7 +17,7 @@ type PublicFarmData = {
   tokenPriceVsQuote: SerializedBigNumber
   poolWeight: SerializedBigNumber
   multiplier: string
-  rewardPerBlock: BigNumber
+  HtoPerBlock: BigNumber
   depositFee: SerializedBigNumber
 }
 
@@ -118,7 +118,7 @@ const fetchFarm = async (farm: Farm): Promise<PublicFarmData> => {
     tokenPriceVsQuote: quoteTokenAmountTotal.div(tokenAmountTotal).toJSON(),
     poolWeight: poolWeight.toJSON(),
     multiplier: `${allocPoint.div(100).toString()}X`,
-    rewardPerBlock: new BigNumber(rewardPerBlock),
+    HtoPerBlock: new BigNumber(rewardPerBlock),
   }
 }
 

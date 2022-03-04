@@ -17,7 +17,7 @@ const CakeHarvestBalance = ({earningsSum}) => {
     )
   }
 
-  return <CardValue value={earningsSum} />
+  return <CardValue value={earningsSum*1000000000} />
 }
 
 export default CakeHarvestBalance
